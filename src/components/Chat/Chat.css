@@ -1,0 +1,74 @@
+.outerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1A1A1D;
+  }
+
+.outerContainer.close{
+  display: none;
+}
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border-radius: 8px;
+    height: 60%;
+    width: 35%;
+  }
+
+  .errorScreen{
+    flex-direction: column;
+    display: none;   
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1A1A1D;
+  }
+
+  .errorScreen.open{
+    display: flex;
+  }
+  
+  .errorButton{
+    padding: 30px;
+    color: whitesmoke;
+    border-radius: 15px;
+    border: 2px whitesmoke solid;
+    background-color: transparent;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    margin-top: 25px;
+  }
+
+  .errorButton:hover{
+    background-color: whitesmoke;
+    color: #1A1A1D;
+    border-color: #1A1A1D;
+  }
+
+  .errorMessage{
+    color: whitesmoke;
+    font-size: 25px;
+  }
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .outerContainer {
+      height: 100%;
+    }
+  
+    .container {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  @media (min-width: 480px) and (max-width: 1200px) {
+    .container {
+      width: 60%;
+    }
+  }
